@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #20242d;
+}
+section#top_bg {
+  width: 100%;
+  height: 445px;
+  position: relative;
+  background-color: #ded7cd;
+
+  .top_background_desktop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    object-fit: contain;
+    object-position: center;
+
+    @media (min-width: 1440px) {
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .top_background_mobile {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    object-fit: contain;
+    object-position: center;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
+
+section#bottom_bg {
+  width: 100%;
+  //   height: 170px;
+  position: relative;
+  background-color: #20242d;
+  padding: 15px 0;
+  color: white;
+
+  .visit_us {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 20px;
+
+    h5 {
+      margin: 0;
+      padding: 0;
+      margin-right: 20px;
+
+      font-size: 18px;
+      font-family: "Open Sans", sans-serif;
+    }
+    a .tokopedia_icon {
+      height: 25px;
+    }
+  }
+
+  .comments_section {
+    display: flex;
+    // justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -20px;
+
+    > * {
+      padding-left: 20px;
+      width: 30%;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0px 12%;
+      flex-direction: column;
+
+      > * {
+        // padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 100%;
+        border-top: 1px solid white;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      padding: 0px 10%;
+    }
+  }
+
+  .comment {
+    .title_section {
+      h5 {
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+
+        span {
+          font-size: 14px;
+          font-weight: 400;
+          color: #84868b;
+        }
+      }
+    }
+    .star_section {
+      display: flex;
+
+      img {
+        width: 12px;
+        margin-right: 1px;
+      }
+    }
+    p {
+      font-size: 14px;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      .title_section {
+        h5 {
+          font-size: 16px;
+
+          span {
+            font-size: 12px;
+            color: #84868b;
+          }
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .visit_us {
+      padding: 20px 12%;
+      justify-content: space-between;
+
+      h5 {
+        margin-right: 0;
+        font-size: 16px;
+      }
+      a .tokopedia_icon {
+        height: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .visit_us {
+      padding: 20px 10%;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.social_media {
+  position: relative;
+  width: 100%;
+  height: 445px;
+
+  &_icon {
+    position: absolute;
+    bottom: 12%;
+    left: 9%;
+    z-index: 20;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+
+    a > * {
+      padding-left: 20px;
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    @media (min-width: 1440px) {
+      bottom: 15px;
+      left: 0;
+      margin-left: -40px;
+
+      a > * {
+        padding-left: 40px;
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      right: 30px;
+      left: unset;
+      bottom: 25px;
+    }
+    @media (min-width: 760px) and (max-width: 768px) {
+      right: 90px;
+      left: unset;
+      bottom: 25px;
+    }
+  }
+}
