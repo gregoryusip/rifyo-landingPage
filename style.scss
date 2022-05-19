@@ -64,8 +64,9 @@ section#bottom_bg {
   color: white;
 
   .visit_us {
-    display: flex;
-    flex-wrap: nowrap;
+    // display: flex;
+    // flex-wrap: nowrap;
+    display: block;
     align-items: center;
     padding-top: 20px;
 
@@ -79,12 +80,12 @@ section#bottom_bg {
     }
     a .tokopedia_icon {
       height: 25px;
+      margin-top: 20px;
     }
   }
 
   .comments_section {
     display: flex;
-    // justify-content: center;
     flex-wrap: wrap;
     margin-left: -20px;
 
@@ -98,7 +99,6 @@ section#bottom_bg {
       flex-direction: column;
 
       > * {
-        // padding-left: 20px;
         padding-top: 5px;
         padding-bottom: 5px;
         width: 100%;
@@ -157,6 +157,7 @@ section#bottom_bg {
 
   @media (max-width: 768px) {
     .visit_us {
+      display: flex;
       padding: 20px 12%;
       justify-content: space-between;
 
@@ -166,6 +167,7 @@ section#bottom_bg {
       }
       a .tokopedia_icon {
         height: 25px;
+        margin-top: 0;
       }
     }
   }
@@ -179,7 +181,7 @@ section#bottom_bg {
 
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1220px;
   margin: 0 auto;
   position: relative;
 }
@@ -191,8 +193,8 @@ section#bottom_bg {
 
   &_icon {
     position: absolute;
-    bottom: 12%;
-    left: 9%;
+    bottom: 14%;
+    left: 11%;
     z-index: 20;
 
     display: flex;
@@ -222,12 +224,72 @@ section#bottom_bg {
     @media (max-width: 760px) {
       right: 30px;
       left: unset;
-      bottom: 25px;
+      bottom: 55px;
     }
     @media (min-width: 760px) and (max-width: 768px) {
       right: 90px;
       left: unset;
-      bottom: 25px;
+      bottom: 55px;
+    }
+  }
+
+  .whatsapp_icon {
+    position: absolute;
+    bottom: 12%;
+    right: 9%;
+    z-index: 20;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -10px;
+
+    a > * {
+      padding-left: 10px;
+    }
+
+    a > img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      font-family: "Open Sans", sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    @media (min-width: 1440px) {
+      bottom: 5px;
+      right: 2%;
+
+      a > img {
+        width: 24px;
+        height: 24px;
+      }
+      a {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      right: 30px;
+      left: unset;
+      bottom: 20px;
+
+      a {
+        font-size: 8px;
+      }
+    }
+    @media (min-width: 760px) and (max-width: 768px) {
+      right: 90px;
+      left: unset;
+      bottom: 20px;
     }
   }
 }

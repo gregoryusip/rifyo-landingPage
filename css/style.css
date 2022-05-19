@@ -78,11 +78,7 @@ section#bottom_bg {
 }
 
 section#bottom_bg .visit_us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -99,6 +95,7 @@ section#bottom_bg .visit_us h5 {
 
 section#bottom_bg .visit_us a .tokopedia_icon {
   height: 25px;
+  margin-top: 20px;
 }
 
 section#bottom_bg .comments_section {
@@ -180,6 +177,9 @@ section#bottom_bg .comment p {
 
 @media (max-width: 768px) {
   section#bottom_bg .visit_us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 20px 12%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -191,6 +191,7 @@ section#bottom_bg .comment p {
   }
   section#bottom_bg .visit_us a .tokopedia_icon {
     height: 25px;
+    margin-top: 0;
   }
 }
 
@@ -202,7 +203,7 @@ section#bottom_bg .comment p {
 
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 1220px;
   margin: 0 auto;
   position: relative;
 }
@@ -215,8 +216,8 @@ section#bottom_bg .comment p {
 
 .social_media_icon {
   position: absolute;
-  bottom: 12%;
-  left: 9%;
+  bottom: 14%;
+  left: 11%;
   z-index: 20;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,7 +254,7 @@ section#bottom_bg .comment p {
   .social_media_icon {
     right: 30px;
     left: unset;
-    bottom: 25px;
+    bottom: 55px;
   }
 }
 
@@ -261,7 +262,77 @@ section#bottom_bg .comment p {
   .social_media_icon {
     right: 90px;
     left: unset;
-    bottom: 25px;
+    bottom: 55px;
+  }
+}
+
+.social_media .whatsapp_icon {
+  position: absolute;
+  bottom: 12%;
+  right: 9%;
+  z-index: 20;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -10px;
+}
+
+.social_media .whatsapp_icon a > * {
+  padding-left: 10px;
+}
+
+.social_media .whatsapp_icon a > img {
+  width: 16px;
+  height: 16px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.social_media .whatsapp_icon a {
+  color: white;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (min-width: 1440px) {
+  .social_media .whatsapp_icon {
+    bottom: 5px;
+    right: 2%;
+  }
+  .social_media .whatsapp_icon a > img {
+    width: 24px;
+    height: 24px;
+  }
+  .social_media .whatsapp_icon a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 760px) {
+  .social_media .whatsapp_icon {
+    right: 30px;
+    left: unset;
+    bottom: 20px;
+  }
+  .social_media .whatsapp_icon a {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 768px) {
+  .social_media .whatsapp_icon {
+    right: 90px;
+    left: unset;
+    bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
