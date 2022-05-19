@@ -135,6 +135,7 @@ section#bottom_bg .comments_section > * {
 }
 
 section#bottom_bg .comment .title_section h5 {
+  margin: 20px 0;
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
 }
