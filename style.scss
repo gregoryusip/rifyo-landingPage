@@ -64,8 +64,6 @@ section#bottom_bg {
   color: white;
 
   .visit_us {
-    // display: flex;
-    // flex-wrap: nowrap;
     display: block;
     align-items: center;
     padding-top: 20px;
@@ -86,12 +84,12 @@ section#bottom_bg {
 
   .comments_section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-left: -20px;
 
     > * {
       padding-left: 20px;
-      width: 30%;
+      width: 35%;
     }
 
     @media (max-width: 768px) {
@@ -106,7 +104,7 @@ section#bottom_bg {
       }
     }
 
-    @media (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
       padding: 0px 10%;
     }
   }
@@ -115,11 +113,11 @@ section#bottom_bg {
     .title_section {
       h5 {
         margin: 20px 0;
-        font-size: 18px;
+        font-size: 16px;
         font-family: "Open Sans", sans-serif;
 
         span {
-          font-size: 13px;
+          font-size: 12px;
           font-weight: 400;
           color: #84868b;
         }
@@ -142,10 +140,10 @@ section#bottom_bg {
     @media (max-width: 768px) {
       .title_section {
         h5 {
-          font-size: 16px;
+          font-size: 14px;
 
           span {
-            font-size: 12px;
+            font-size: 10px;
             color: #84868b;
           }
         }
@@ -159,7 +157,9 @@ section#bottom_bg {
   @media (max-width: 768px) {
     .visit_us {
       display: flex;
-      padding: 20px 12%;
+      padding: 20px 0;
+      padding-left: 12%;
+      padding-right: 8%;
       justify-content: space-between;
 
       h5 {
@@ -167,13 +167,13 @@ section#bottom_bg {
         font-size: 16px;
       }
       a .tokopedia_icon {
-        height: 25px;
+        height: 18px;
         margin-top: 0;
       }
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
     .visit_us {
       padding: 20px 10%;
     }
